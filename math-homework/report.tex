@@ -1,0 +1,47 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{preamble}
+
+% Header
+\fancyhead[L]{}
+\fancyhead[C]{}
+\fancyhead[R]{}
+
+% Footer
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{side~\thepage~af~\pageref{LastPage}}
+
+\begin{document}
+
+% titlepage
+\begin{titlepage}
+	\begin{center}
+		{\huge Matematik}\\
+
+		\vspace{0.5cm}
+
+		{\large Projekt navn}\\
+
+		\vspace{0.2cm}
+
+		Lavet af Mads Harder
+
+		\vspace{4cm}
+
+	\end{center}
+\end{titlepage}
+\newpage
+
+% table of contents
+\thispagestyle{empty}
+\renewcommand{\contentsname}{Indholdsfortegnelse}
+\tableofcontents
+
+% new page and sets the pagenumber to 1
+\newpage
+\setcounter{page}{1}
+
+
+\end{document}
+
