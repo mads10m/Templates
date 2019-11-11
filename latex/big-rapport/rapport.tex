@@ -1,0 +1,57 @@
+% vim: foldmethod=marker foldlevel=-1 nolist
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{preamble}
+
+%\usepackage{xifthen}
+%\usepackage{pdfpages}
+%\usepackage{transparent}
+
+
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+
+% Header
+\fancyhead[L]{}
+\fancyhead[C]{}
+\fancyhead[R]{}
+
+% Footer
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{side~\thepage~af~\pageref{LastPage}}
+
+\begin{document}
+
+% titlepage
+\begin{titlepage}
+	\begin{center}
+		{\huge Overskrift}\\
+
+		\vspace{0.5cm}
+
+		{\large Under overskrift}\\
+
+		\vspace{0.2cm}
+
+		Lavet af Mads Harder
+
+		\vspace{4cm}
+
+	\end{center}
+\end{titlepage}
+\newpage
+
+% table of contents
+\thispagestyle{empty}
+\renewcommand{\contentsname}{Indholdsfortegnelse}
+\tableofcontents
+
+% new page and sets the pagenumber to 1
+\newpage
+\setcounter{page}{1}
+
+\end{document}
+
